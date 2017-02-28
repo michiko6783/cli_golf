@@ -1,0 +1,201 @@
+Last login: Mon Feb 27 20:35:23 on ttys000
+melissapringle ~
+$ cd kitchen/
+-bash: cd: kitchen/: No such file or directory
+melissapringle ~
+$ cd ~/desktop/kitchen
+melissapringle ~/desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+melissapringle ~/desktop/kitchen
+$ rm cans.txt
+removed 'cans.txt'
+melissapringle ~/desktop/kitchen
+$ ls
+fridge/  pantry/
+melissapringle ~/desktop/kitchen
+$ cd fridge
+melissapringle ~/desktop/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+melissapringle ~/desktop/kitchen/fridge
+$ rm diapers.txt
+removed 'diapers.txt'
+melissapringle ~/desktop/kitchen/fridge
+$ ls
+freezer/  milk.txt  trashcan/
+melissapringle ~/desktop/kitchen/fridge
+$ cd freezer
+melissapringle ~/desktop/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+melissapringle ~/desktop/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+melissapringle ~/desktop/kitchen/fridge/freezer
+$ cd ..
+melissapringle ~/desktop/kitchen/fridge
+$ ls
+freezer/  milk.txt  trashcan/
+melissapringle ~/desktop/kitchen/fridge
+$ cd ..
+melissapringle ~/desktop/kitchen
+$ ls
+fridge/  pantry/
+melissapringle ~/desktop/kitchen
+$ cd ..
+melissapringle ~/desktop
+$ ls
+'**thelionking**'/			    indx.html
+ TomorrowNight.terminal			    jsbin.gazebor.1.html
+'Welcome | WDI Fundamentals.webarchive'     kitchen/
+ example1.txt				    main.js
+ game/					    style.css
+ git-2.10.1-intel-universal-mavericks.pkg   temp.html
+melissapringle ~/desktop
+$ cd kitchen
+melissapringle ~/desktop/kitchen
+$ cd trashcan
+-bash: cd: trashcan: No such file or directory
+melissapringle ~/desktop/kitchen
+$ cd freezer
+-bash: cd: freezer: No such file or directory
+melissapringle ~/desktop/kitchen
+$ cd fridge/freezer/trashcan
+-bash: cd: fridge/freezer/trashcan: No such file or directory
+melissapringle ~/desktop/kitchen
+$ pwd
+/Users/melissapringle/desktop/kitchen
+melissapringle ~/desktop/kitchen
+$ cd fridge
+melissapringle ~/desktop/kitchen/fridge
+$ cd trashcan
+melissapringle ~/desktop/kitchen/fridge/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+melissapringle ~/desktop/kitchen/fridge/trashcan
+$ cd sink
+melissapringle ~/desktop/kitchen/fridge/trashcan/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+melissapringle ~/desktop/kitchen/fridge/trashcan/sink
+$ rm delete-me.txt
+removed 'delete-me.txt'
+melissapringle ~/desktop/kitchen/fridge/trashcan/sink
+$ cd ../../
+melissapringle ~/desktop/kitchen/fridge
+$ ls
+freezer/  milk.txt  trashcan/
+melissapringle ~/desktop/kitchen/fridge
+$ cd ..
+melissapringle ~/desktop/kitchen
+$ cd pantry
+melissapringle ~/desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer/ fridge/
+'crisper-drawer/' -> 'fridge/'
+melissapringle ~/desktop/kitchen/pantry
+$ mv fridge/ crisper-drawer/
+'fridge/' -> 'crisper-drawer/'
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer /fridge/crisper-drawer/
+gmv: cannot move 'crisper-drawer' to '/fridge/crisper-drawer/': No such file or directory
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer /kitchen/fridge/
+gmv: cannot move 'crisper-drawer' to '/kitchen/fridge/': No such file or directory
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer ../../
+'crisper-drawer' -> '../../crisper-drawer'
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer/ kitchen/fridge/
+gmv: cannot stat 'crisper-drawer/': No such file or directory
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer /.
+gmv: cannot stat 'crisper-drawer': No such file or directory
+melissapringle ~/desktop/kitchen/pantry
+$ mv crisper-drawer ./
+gmv: cannot stat 'crisper-drawer': No such file or directory
+melissapringle ~/desktop/kitchen/pantry
+$ ~cd
+-bash: ~cd: command not found
+melissapringle ~/desktop/kitchen/pantry
+$ cd ~
+melissapringle ~
+$ pwd
+/Users/melissapringle
+melissapringle ~
+$ cd desktop
+melissapringle ~/desktop
+$ ls
+'**thelionking**'/			    indx.html
+ TomorrowNight.terminal			    jsbin.gazebor.1.html
+'Welcome | WDI Fundamentals.webarchive'     kitchen/
+ crisper-drawer/			    main.js
+ example1.txt				    style.css
+ game/					    temp.html
+ git-2.10.1-intel-universal-mavericks.pkg
+melissapringle ~/desktop
+$ mv crisper-drawer/ kitchen/fridge/
+'crisper-drawer/' -> 'kitchen/fridge/crisper-drawer'
+melissapringle ~/desktop
+$ cd kitchen
+melissapringle ~/desktop/kitchen
+$ cd fridge
+melissapringle ~/desktop/kitchen/fridge
+$ cd crispe-drawer
+-bash: cd: crispe-drawer: No such file or directory
+melissapringle ~/desktop/kitchen/fridge
+$ cd crisper-drawer
+melissapringle ~/desktop/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+melissapringle ~/desktop/kitchen/fridge/crisper-drawer
+$ cd kitchen
+-bash: cd: kitchen: No such file or directory
+melissapringle ~/desktop/kitchen/fridge/crisper-drawer
+$ cd ../
+melissapringle ~/desktop/kitchen/fridge
+$ cd ../
+melissapringle ~/desktop/kitchen
+$ mv trashcan ../
+gmv: cannot stat 'trashcan': No such file or directory
+melissapringle ~/desktop/kitchen
+$ cd fridge
+melissapringle ~/desktop/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt  trashcan/
+melissapringle ~/desktop/kitchen/fridge
+$ mv trashcan/ ../
+'trashcan/' -> '../trashcan'
+melissapringle ~/desktop/kitchen/fridge
+$ cd sink
+-bash: cd: sink: No such file or directory
+melissapringle ~/desktop/kitchen/fridge
+$ pwd
+/Users/melissapringle/desktop/kitchen/fridge
+melissapringle ~/desktop/kitchen/fridge
+$ cd ..
+melissapringle ~/desktop/kitchen
+$ cd trashcan/
+melissapringle ~/desktop/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+melissapringle ~/desktop/kitchen/trashcan
+$ mv sink/ ../
+'sink/' -> '../sink'
+melissapringle ~/desktop/kitchen/trashcan
+$ cd ../
+melissapringle ~/desktop/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+melissapringle ~/desktop/kitchen
+$ cd sink
+melissapringle ~/desktop/kitchen/sink
+$ mkdir dry-rack/
+gmkdir: created directory 'dry-rack/'
+melissapringle ~/desktop/kitchen/sink
+$ mv clean-dishes.txt dry-rack/
+'clean-dishes.txt' -> 'dry-rack/clean-dishes.txt'
+melissapringle ~/desktop/kitchen/sink
+$
